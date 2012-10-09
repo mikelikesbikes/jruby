@@ -258,15 +258,6 @@ public class ArgumentProcessor {
                 case 'T':
                     {
                         String temp = grabOptionalValue();
-                        int value = 1;
-                        if (temp != null) {
-                            try {
-                                value = Integer.parseInt(temp, 8);
-                            } catch (Exception e) {
-                                value = 1;
-                            }
-                        }
-                        config.setSafeLevel(value);
                         break FOR;
                     }
                 case 'U':
